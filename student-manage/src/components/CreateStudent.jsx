@@ -3,6 +3,7 @@ import  { useState } from 'react';
 import { db } from '../FirebaseConfig';
 import CircularProgress from '@mui/material/CircularProgress';
 
+
 function CreateStudent({ getStudents }) {
   const [rollno, setRollNo] = useState("");
   const [name, setName] = useState("");
@@ -39,5 +40,6 @@ function CreateStudent({ getStudents }) {
     </form>
   );
 }
+
 
 export default CreateStudent;
