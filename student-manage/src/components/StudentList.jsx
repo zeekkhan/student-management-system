@@ -2,7 +2,9 @@
 import "../App.css";
 import StudentTable from "./StudentTable";
 
+
 function StudentList({ students, setStudents }) {
+
   return (
     <>
       <h1>Student List</h1>
@@ -10,5 +12,6 @@ function StudentList({ students, setStudents }) {
     </>
   );
 }
+
 
 export default StudentList;
