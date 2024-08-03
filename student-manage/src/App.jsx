@@ -6,6 +6,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from './FirebaseConfig';
 import CircularProgress from '@mui/material/CircularProgress';
 
+
 function App() {
   const [students, setStudents] = useState([]);
   const [loader, setLoader] = useState(false);
@@ -27,6 +28,7 @@ function App() {
     setLoader(false);
   };
 
+  
   useEffect(() => {
     getStudents();
   }, []);
